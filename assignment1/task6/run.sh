@@ -1,0 +1,1 @@
+hadoop jar /opt/hadoop/hadoop-2.7.3/share/hadoop/tools/lib/hadoop-streaming-2.7.3.jar -D mapreduce.partition.keycomparator.options="-k1,1nr"  -D mapred.map.task=10 -D mapred.reduce.tasks=5 -input /user/$USER/assignment1/task4/output -output /user/$USER/assignment1/task6/output -mapper task6_mapper.py -file task6_mapper.py -reducer task6_reducer.py -file task6_reducer.py 

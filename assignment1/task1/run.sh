@@ -1,0 +1,1 @@
+hadoop jar /opt/hadoop/hadoop-2.7.3/share/hadoop/tools/lib/hadoop-streaming-2.7.3.jar -D mapred.reduce.tasks=2 -input /user/$USER/data/webLarge/ -output /user/$USER/assignment1/task1/output -mapper task1_mapper.py -file task1_mapper.py
